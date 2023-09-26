@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A071E"
+    tools:context=".fragments.HomeFragment">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        app:cardCornerRadius="40dp"
+        android:layout_marginHorizontal="21dp"
+        android:layout_marginTop="13dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/hinh" />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F2F2F2"
+        android:textFontWeight="600"
+        android:textSize="18dp"
+        android:letterSpacing="0.04"
+        android:textStyle="normal"
+        android:lineHeight="20dp"
+        android:layout_marginHorizontal="73dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/nunitobold"
+        android:text="Sarwar Jahan"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#DEDEDE"
+        android:letterSpacing="0.04"
+        android:textFontWeight="400"
+        android:textSize="14dp"
+        android:textStyle="normal"
+        android:lineHeight="20dp"
+        android:layout_marginHorizontal="73dp"
+        android:layout_marginTop="33dp"
+        android:fontFamily="@font/nunitobold"
+        android:text="Gold Member"/>
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="25dp"
+        android:layout_marginHorizontal="363dp"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/notifi"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listen The\nLatest Musics"
+        android:textColor="#F2F2F2"
+        android:textFontWeight="600"
+        android:textSize="26dp"
+        android:letterSpacing="0.04"
+        android:textStyle="normal"
+        android:lineHeight="20dp"
+        android:layout_marginHorizontal="21dp"
+        android:layout_marginTop="77dp"
+        android:fontFamily="@font/nunitobold"
+        />
+
+    <EditText
+        android:id="@+id/edt"
+        android:layout_width="170dp"
+        android:layout_height="52dp"
+        android:background="@drawable/custom_edt"
+        android:textSize="14dp"
+        android:textFontWeight="400"
+        android:textStyle="normal"
+        android:lineHeight="25.5dp"
+        android:letterSpacing="0.024"
+        android:textColor="#8E8E8E"
+        android:layout_marginTop="77dp"
+        android:layout_marginLeft="215dp"
+        android:paddingLeft="20dp"
+        android:fontFamily="@font/nunitobold"
+        android:hint="Search Music" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recently Played"
+        android:textColor="#F2F2F2"
+        android:textFontWeight="600"
+        android:textSize="22dp"
+        android:letterSpacing="0.04"
+        android:textStyle="normal"
+        android:lineHeight="20dp"
+        android:layout_marginHorizontal="21dp"
+        android:layout_marginTop="169dp"
+        android:fontFamily="@font/nunitobold"
+        ></TextView>
+    
+    <ImageView
+        android:layout_width="101dp"
+        android:layout_height="81dp"
+        android:src="@drawable/rectangle"
+        android:layout_marginHorizontal="21dp"
+        android:layout_marginTop="215dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F2F2F2"
+        android:letterSpacing="0.024"
+        android:textFontWeight="400"
+        android:textSize="14dp"
+        android:textStyle="normal"
+        android:lineHeight="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="303dp"
+        android:fontFamily="@font/nunitobold"
+        android:text="The triangle"
+        ></TextView>
+
+    <ImageView
+        android:layout_width="101dp"
+        android:layout_height="81dp"
+        android:src="@drawable/rectangles"
+        android:layout_marginLeft="153dp"
+        android:layout_marginTop="215dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F2F2F2"
+        android:letterSpacing="0.024"
+        android:textFontWeight="400"
+        android:textSize="14dp"
+        android:textStyle="normal"
+        android:lineHeight="20dp"
+        android:layout_marginLeft="158dp"
+        android:layout_marginTop="303dp"
+        android:fontFamily="@font/nunitobold"
+        android:text="Dune Of Visa"
+        ></TextView>
+
+    <ImageView
+        android:layout_width="101dp"
+        android:layout_height="81dp"
+        android:src="@drawable/rectangler"
+        android:layout_marginLeft="285dp"
+        android:layout_marginTop="215dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F2F2F2"
+        android:letterSpacing="0.024"
+        android:textFontWeight="400"
+        android:textSize="14dp"
+        android:textStyle="normal"
+        android:lineHeight="20dp"
+        android:layout_marginLeft="308dp"
+        android:layout_marginTop="303dp"
+        android:fontFamily="@font/nunitobold"
+        android:text="Riskitall"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recommend for you"
+        android:textColor="#F2F2F2"
+        android:textFontWeight="600"
+        android:textSize="18dp"
+        android:letterSpacing="0.04"
+        android:textStyle="normal"
+        android:lineHeight="18dp"
+        android:layout_marginHorizontal="21dp"
+        android:layout_marginTop="348dp"
+        android:fontFamily="@font/nunitobold"
+        />
+
+</RelativeLayout>
