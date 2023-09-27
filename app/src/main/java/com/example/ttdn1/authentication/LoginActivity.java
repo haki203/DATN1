@@ -23,7 +23,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
-    TextInputEditText editTextEmail, editTextPassword;
+    TextInputEditText editTextEmailhihi, editTextPasswordhihi;
     Button buttonLogin;
     FirebaseAuth mAuth;
     ProgressBar progressBar;
@@ -44,8 +44,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         mAuth= FirebaseAuth.getInstance();
-        editTextEmail = findViewById(R.id.editTextEmail);
-        editTextPassword = findViewById(R.id.editTextPassword);
+        editTextEmailhihi = findViewById(R.id.editTextEmail);
+        editTextPasswordhihi = findViewById(R.id.editTextPassword);
         buttonLogin = findViewById(R.id.sirLoginButton);
         progressBar = findViewById(R.id.progressBar);
         tvGotoSignUp = findViewById(R.id.tv_Register);
@@ -56,8 +56,8 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 progressBar.setVisibility(View.VISIBLE);
                 String email, password;
-                email = String.valueOf(editTextEmail.getText());
-                password = String.valueOf(editTextPassword.getText());
+                email = String.valueOf(editTextEmailhihi.getText());
+                password = String.valueOf(editTextPasswordhihi.getText());
 
                 if (TextUtils.isEmpty(email)){
                     Toast.makeText(LoginActivity.this, "Enter Email", Toast.LENGTH_SHORT).show();

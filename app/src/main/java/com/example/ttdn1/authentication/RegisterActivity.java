@@ -24,7 +24,7 @@ import com.google.firebase.ktx.Firebase;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    TextInputEditText editTextEmail, editTextPassword;
+    TextInputEditText editTextEmailhoho, editTextPasswordhoho;
     Button buttonRegister;
     FirebaseAuth mAuth;
     ProgressBar progressBar;
@@ -45,8 +45,8 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         mAuth= FirebaseAuth.getInstance();
-        editTextEmail = findViewById(R.id.editTextEmail2);
-        editTextPassword = findViewById(R.id.editTextPassword2);
+        editTextEmailhoho = findViewById(R.id.editTextEmail2);
+        editTextPasswordhoho = findViewById(R.id.editTextPassword2);
         buttonRegister = findViewById(R.id.sirRegisterButton);
         progressBar = findViewById(R.id.progressBar2);
         tvGotoSignIn = findViewById(R.id.tv_SignUp);
@@ -65,8 +65,8 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 progressBar.setVisibility(View.VISIBLE);
                 String email, password;
-                email = String.valueOf(editTextEmail.getText());
-                password = String.valueOf(editTextPassword.getText());
+                email = String.valueOf(editTextEmailhoho.getText());
+                password = String.valueOf(editTextPasswordhoho.getText());
 
                 if (TextUtils.isEmpty(email)){
                     Toast.makeText(RegisterActivity.this, "Enter Email", Toast.LENGTH_SHORT).show();
