@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,8 +24,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.ktx.Firebase;
 
 public class RegisterActivity extends AppCompatActivity {
-
-    TextInputEditText editTextEmailhoho, editTextPasswordhoho;
+    EditText editTextEmailhoho, editTextPasswordhoho;
     Button buttonRegister;
     FirebaseAuth mAuth;
     ProgressBar progressBar;

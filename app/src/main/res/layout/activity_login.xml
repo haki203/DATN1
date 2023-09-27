@@ -11,81 +11,87 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="8dp"
-        android:layout_centerInParent="true"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login"
             android:layout_marginTop="20dp"
+            android:text="Login"
             android:textColor="#2661FA"
             android:textSize="30sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
+
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/InputEmail"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp">
+
             <EditText
                 android:id="@+id/editTextEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="12sp"
                 android:background="#002661FA"
-                tools:targetApi="lollipop"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
-                android:maxLines="1"/>
+                android:maxLines="1"
+                android:textSize="12sp"
+                tools:targetApi="lollipop" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/InputPassword"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp">
+
             <EditText
                 android:id="@+id/editTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="12sp"
                 android:background="#002661FA"
-                tools:targetApi="lollipop"
                 android:hint="Password"
                 android:inputType="textPassword"
-                android:maxLines="1"/>
+                android:maxLines="1"
+                android:textSize="12sp"
+                tools:targetApi="lollipop" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
         <ProgressBar
             android:id="@+id/progressBar"
-            android:visibility="gone"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
         <Button
             android:id="@+id/sirLoginButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/login_button_bk"
-            android:textColor="#FFF"
-            android:textStyle="bold"
-            android:text="Login"
             android:layout_gravity="right"
             android:layout_marginTop="20dp"
-            />
+            android:background="@drawable/login_button_bk"
+            android:text="Login"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/tv_Register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:gravity="end"
             android:text="Don't have an account? Sign Up"
             android:textAlignment="textEnd"
             android:textColor="#2661FA"
-            android:textStyle="bold"
-            android:gravity="end"/>
+            android:textStyle="bold" />
     </LinearLayout>
 
 </RelativeLayout>
