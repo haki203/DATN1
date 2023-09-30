@@ -11,6 +11,7 @@ import android.graphics.BitmapFactory;
 import android.media.MediaPlayer;
 import android.os.Binder;
 import android.os.IBinder;
+import android.support.v4.media.session.MediaSessionCompat;
 
 import androidx.core.app.NotificationCompat;
 
@@ -70,15 +71,19 @@ public class MusicService extends Service {
 
     private void sendNotification() {
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.rectangle19);
+        MediaSessionCompat mediaSessionCompat = new MediaSessionCompat(this, "tag");
         Notification notification = new NotificationCompat.Builder(this, CHANNEL_ID)
+                .setSmallIcon(R.drawable.ic_music)
                 .setContentTitle("Ophelia by Steven")
                 .setContentText("Ophelia")
-                .setSmallIcon(R.drawable.ic_music)
                 .setSubText("Music App")
                 .setLargeIcon(bitmap)
                 .addAction(R.drawable.baseline_skip_previous_24,"previous",null)
-                .addAction(R.drawable.play,"play",null)
+                .addAction(R.drawable.pause,"play",null)
                 .addAction(R.drawable.baseline_skip_next_24,"next",null)
+                .setStyle(new androidx.media.app.NotificationCompat.MediaStyle()
+                        .setShowActionsInCompactView(1))
+                       // .setMediaSession(mediaSessionCompat.getSessionToken()))
                 .build();
         startForeground(1, notification);
     }
