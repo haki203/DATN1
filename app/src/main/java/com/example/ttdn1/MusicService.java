@@ -6,6 +6,8 @@ import android.app.Notification;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.media.MediaPlayer;
 import android.os.Binder;
 import android.os.IBinder;
@@ -67,11 +69,16 @@ public class MusicService extends Service {
     }
 
     private void sendNotification() {
-
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.rectangle19);
         Notification notification = new NotificationCompat.Builder(this, CHANNEL_ID)
-                .setContentTitle("Tên bài hát")
-                .setContentText("Tên ca sĩ")
+                .setContentTitle("Ophelia by Steven")
+                .setContentText("Ophelia")
                 .setSmallIcon(R.drawable.ic_music)
+                .setSubText("Music App")
+                .setLargeIcon(bitmap)
+                .addAction(R.drawable.baseline_skip_previous_24,"previous",null)
+                .addAction(R.drawable.play,"play",null)
+                .addAction(R.drawable.baseline_skip_next_24,"next",null)
                 .build();
         startForeground(1, notification);
     }
