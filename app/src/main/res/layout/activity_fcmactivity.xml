@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".FCMActivity">
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:text="CLick"
-        android:id="@+id/btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <Button-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:text="CLick"-->
+<!--        android:id="@+id/btn"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>

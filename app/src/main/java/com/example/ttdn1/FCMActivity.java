@@ -28,7 +28,7 @@ public class FCMActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fcmactivity);
-        btn= findViewById(R.id.btn);
+//        btn= findViewById(R.id.btn);
 
 
         /*
@@ -42,32 +42,32 @@ public class FCMActivity extends AppCompatActivity {
         */
 
 
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // FCMNotifier để gửi API thông báo
-                FCMNotifier fcmNotifier = new FCMNotifier();
-                String deviceId = "DEVICE_ID_OF_THE_TARGET_DEVICE"; // Thay thế bằng định danh thiết bị cụ thể
-                String title = "Tiêu đề thông báo";
-                String message = "Nội dung thông báo: Đi học đi ông cháu ơi";
-
-                // lay token fcm
-                FirebaseMessaging.getInstance().getToken()
-                        .addOnCompleteListener(task -> {
-                            if (!task.isSuccessful()) {
-                                return;
-                            }
-                            String token = task.getResult();
-                            Log.d(">>>>>>>", "token ne:" + token);
-                            // Lấy token và gưi thông báo
-                            fcmNotifier.sendNotification(token, title, message);
-                        });
-
-
-
-                //createNotificationChannel2();
-            }
-        });
+//        btn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                // FCMNotifier để gửi API thông báo
+//                FCMNotifier fcmNotifier = new FCMNotifier();
+//                String deviceId = "DEVICE_ID_OF_THE_TARGET_DEVICE"; // Thay thế bằng định danh thiết bị cụ thể
+//                String title = "Tiêu đề thông báo";
+//                String message = "Nội dung thông báo: Đi học đi ông cháu ơi";
+//
+//                // lay token fcm
+//                FirebaseMessaging.getInstance().getToken()
+//                        .addOnCompleteListener(task -> {
+//                            if (!task.isSuccessful()) {
+//                                return;
+//                            }
+//                            String token = task.getResult();
+//                            Log.d(">>>>>>>", "token ne:" + token);
+//                            // Lấy token và gưi thông báo
+//                            fcmNotifier.sendNotification(token, title, message);
+//                        });
+//
+//
+//
+//                //createNotificationChannel2();
+//            }
+//        });
     }
 
     private void createNotificationChannel() {
