@@ -1,23 +1,13 @@
 {
   "project_info": {
-<<<<<<< HEAD
     "project_number": "120104062790",
     "project_id": "project-datn1",
     "storage_bucket": "project-datn1.appspot.com"
-=======
-    "project_number": "604464843561",
-    "project_id": "ttdn1-997ef",
-    "storage_bucket": "ttdn1-997ef.appspot.com"
->>>>>>> chien
   },
   "client": [
     {
       "client_info": {
-<<<<<<< HEAD
         "mobilesdk_app_id": "1:120104062790:android:2fc227ab3fb46d07471f47",
-=======
-        "mobilesdk_app_id": "1:604464843561:android:d3bef22bb54d969f48c538",
->>>>>>> chien
         "android_client_info": {
           "package_name": "com.example.ttdn1"
         }
@@ -25,11 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-<<<<<<< HEAD
           "current_key": "AIzaSyAeL09WNgRUmOIibJDzaeqSz1tnWGtgDjc"
-=======
-          "current_key": "AIzaSyClP-ol934Fq3wO-byn40U_AbVxbpxgMdE"
->>>>>>> chien
         }
       ],
       "services": {
