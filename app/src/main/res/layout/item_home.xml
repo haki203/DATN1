@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="22dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:src="@drawable/rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtnamemusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="name"
+        android:textColor="#F2F2F2"
+        android:textFontWeight="400"
+        android:textSize="17dp"
+        android:fontFamily="@font/nunitobold"
+        android:layout_marginTop="11dp"
+        android:lineHeight="22dp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/imgView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="music"
+        android:textSize="13dp"
+        android:textFontWeight="400"
+        android:lineHeight="18dp"
+        android:textColor="#DEDEDE"
+        android:fontFamily="@font/nunitobold"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/imgView"
+        app:layout_constraintTop_toBottomOf="@+id/txtnamemusic" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

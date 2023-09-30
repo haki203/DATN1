@@ -2,11 +2,13 @@ package com.example.ttdn1;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.ViewOutlineProvider;
 
 import com.example.ttdn1.adapter.AdapterViewPager;
 import com.example.ttdn1.fragments.HomeFragment;
@@ -20,12 +22,16 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     ViewPager2 viewPager2;
+    private CardView cardView;
     ArrayList<Fragment> arrayList = new ArrayList<>();
     BottomNavigationView bottomNavigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        cardView = findViewById(R.id.cardView);
+        cardView.setOutlineProvider(ViewOutlineProvider.BACKGROUND);
+        cardView.setClipToOutline(true);
         viewPager2 = findViewById(R.id.pagerMain);
         bottomNavigationView = findViewById(R.id.bottomNavigate);
         arrayList.add(new HomeFragment());

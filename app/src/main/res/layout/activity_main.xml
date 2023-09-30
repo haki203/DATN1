@@ -17,6 +17,8 @@
         android:layout_marginHorizontal="20dp"
         android:layout_alignParentBottom="true"
         app:cardCornerRadius="40dp"
+        android:elevation="200dp"
+        android:background="@drawable/shadow"
         android:layout_height="wrap_content">
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigate"
@@ -26,7 +28,8 @@
             app:itemTextColor="@color/color"
             app:labelVisibilityMode="unlabeled"
             android:background="#0A091E"
-            app:menu="@menu/bottom_navmenu"></com.google.android.material.bottomnavigation.BottomNavigationView>
+            app:menu="@menu/bottom_navmenu"
+            ></com.google.android.material.bottomnavigation.BottomNavigationView>
     </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
